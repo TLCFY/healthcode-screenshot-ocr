@@ -8,10 +8,11 @@
 
 ## Package-Installation
 
-1. 安装`tesseract-ocr`
+1. 安装`tesseract-ocr`及其中文包
 
     ```sh
     sudo apt install tesseract-ocr
+    sudo apt install tesseract-ocr0-chi-sim
     ```
 
 2. 安装依赖包`pytesseract`和`numpy`
