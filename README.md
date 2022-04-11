@@ -15,10 +15,10 @@
     sudo apt install tesseract-ocr-chi-sim
     ```
 
-2. 安装依赖包`pytesseract`和`numpy`
+2. 安装`python`依赖包`pytesseract`、`numpy`和`opencv-python`
 
     ```sh
-    pip install pytesseract numpy
+    pip install pytesseract numpy opencv-python
     ```
 
     
