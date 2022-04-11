@@ -1,2 +1,2 @@
-test:
-	python src/main.py
+make:
+	python ./src/OCR_tesseract.py ./test/test-green.jpg
