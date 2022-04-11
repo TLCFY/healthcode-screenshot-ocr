@@ -12,8 +12,8 @@ def gray_mean_rgb(inputimagepath,outimagepath):
             gray_mean_rgb_image[i,j] = (int(img[i,j][0])+int(img[i,j][1])+int(img[i,j][2]))/3
     cv2.imwrite(outimagepath, gray_mean_rgb_image)  # 保存当前灰度值处理过后的文件
 
-inputimagepath = "./test/test-green.jpg"
-outimagepath = "./test/test-green-gmrgb.jpg"
+inputimagepath = "./test/test-yellow.jpg"
+outimagepath = "./test/test-yellow-gmrgb.jpg"
 gray_mean_rgb(inputimagepath,outimagepath)
 
 print(OCR_tesseract.imageOCR(outimagepath))
