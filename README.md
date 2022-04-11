@@ -12,7 +12,7 @@
 
     ```sh
     sudo apt install tesseract-ocr
-    sudo apt install tesseract-ocr0-chi-sim
+    sudo apt install tesseract-ocr-chi-sim
     ```
 
 2. 安装依赖包`pytesseract`和`numpy`
