@@ -18,14 +18,14 @@
 
 1. 安装`tesseract-ocr`及其中文包
 
-    ```sh
+    ```shell
     sudo apt install tesseract-ocr
     sudo apt install tesseract-ocr-chi-sim
     ```
 
 2. 安装`python`依赖包`pytesseract`、`numpy`和`opencv-python`
 
-    ```sh
+    ```shell
     pip install pytesseract numpy opencv-python
     ```
 
