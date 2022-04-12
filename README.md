@@ -2,6 +2,10 @@
 
 识别并统计健康码截图中的个人信息
 
+## Collaborator
+
+- [@TLCFY](https://github.com/TLCFY/)
+
 ## Dev Log
 
 - **2022-4-12：**
@@ -13,10 +17,6 @@
   获取`baidu-aip`调用接口
 
   申请百度`OCR`免费测试资源
-
-## Collaborator
-
-- [@TLCFY](https://github.com/TLCFY/)
 
 ## Package-Installation
 
