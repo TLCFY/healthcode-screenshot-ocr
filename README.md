@@ -2,6 +2,14 @@
 
 识别并统计健康码截图中的个人信息
 
+## Dev Log
+
+- **2022-4-12：**
+
+  建立新的工作分支`baidu-ocr`
+
+  暂停`main`分支中根据`pytesseract-ocr`搭建`OCR`引擎工作
+
 ## Collaborator
 
 - [@TLCFY](https://github.com/TLCFY/)
@@ -21,4 +29,6 @@
     pip install pytesseract numpy opencv-python
     ```
 
-    
+
+
+
