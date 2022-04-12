@@ -1,2 +1,2 @@
 make:
-	python ./src/OCR_tesseract.py ./test/test-green.jpg
+	python ./src/ImgProcess/gray_mean_rgb.py ./test/test-green.jpg
