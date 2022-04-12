@@ -9,6 +9,10 @@
   建立新的工作分支`baidu-ocr`
 
   暂停`main`分支中根据`pytesseract-ocr`搭建`OCR`引擎工作
+  
+  获取`baidu-aip`调用接口
+
+  申请百度`OCR`免费测试资源
 
 ## Collaborator
 
@@ -16,14 +20,7 @@
 
 ## Package-Installation
 
-1. 安装`tesseract-ocr`及其中文包
-
-    ```shell
-    sudo apt install tesseract-ocr
-    sudo apt install tesseract-ocr-chi-sim
-    ```
-
-2. 安装百度官方`OCR`依赖包`baidu-aip`
+1. 安装百度官方`OCR`依赖包`baidu-aip`
 
     ```shell
     pip install baidu-aip
