@@ -23,10 +23,10 @@
     sudo apt install tesseract-ocr-chi-sim
     ```
 
-2. 安装`python`依赖包`pytesseract`、`numpy`和`opencv-python`
+2. 安装百度官方`OCR`依赖包`baidu-aip`
 
     ```shell
-    pip install pytesseract numpy opencv-python
+    pip install baidu-aip
     ```
 
 
