@@ -8,6 +8,10 @@
 
 ## Dev Log
 
+- **2022-4-13：**
+
+  `OCR_baidu.py`报错：`ModuleNotFoundError: No module named 'chardet'`，执行命令`pip install chardet`解决。
+
 - **2022-4-12：**
 
   建立新的工作分支`baidu-ocr`
@@ -20,10 +24,11 @@
 
 ## Package-Installation
 
-1. 安装百度官方`OCR`依赖包`baidu-aip`
+1. 安装百度官方`OCR`依赖包`baidu-aip`、`chardet`
 
     ```shell
     pip install baidu-aip
+    pip install chardet
     ```
 
 
