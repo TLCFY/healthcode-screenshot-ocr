@@ -133,3 +133,6 @@ test/
 
 # My Baidu-aip key
 key
+
+# example project
+example_src/
