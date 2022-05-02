@@ -2,31 +2,33 @@
 
 识别并统计健康码截图中的个人信息
 
+## Collaborator
+
+- [@TLCFY](https://github.com/TLCFY/)
+
 ## Dev Log
+
+- **2022-4-13：**
+
+  `OCR_baidu.py`报错：`ModuleNotFoundError: No module named 'chardet'`，执行命令`pip install chardet`解决。
 
 - **2022-4-12：**
 
   建立新的工作分支`baidu-ocr`
 
   暂停`main`分支中根据`pytesseract-ocr`搭建`OCR`引擎工作
+  
+  获取`baidu-aip`调用接口
 
-## Collaborator
-
-- [@TLCFY](https://github.com/TLCFY/)
+  申请百度`OCR`免费测试资源
 
 ## Package-Installation
 
-1. 安装`tesseract-ocr`及其中文包
+1. 安装百度官方`OCR`依赖包`baidu-aip`、`chardet`
 
-    ```sh
-    sudo apt install tesseract-ocr
-    sudo apt install tesseract-ocr-chi-sim
-    ```
-
-2. 安装`python`依赖包`pytesseract`、`numpy`和`opencv-python`
-
-    ```sh
-    pip install pytesseract numpy opencv-python
+    ```shell
+    pip install baidu-aip
+    pip install chardet
     ```
 
 
