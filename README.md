@@ -8,6 +8,12 @@
 
 ## Dev Log
 
+- **2022-5-2：**
+
+  利用本地文件尝试调用了`baidu-ocr SDK`，识别准确率良好
+
+  输出结果格式化为`result.xls`文件
+
 - **2022-4-13：**
 
   `OCR_baidu.py`报错：`ModuleNotFoundError: No module named 'chardet'`，执行命令`pip install chardet`解决。
@@ -30,7 +36,6 @@
     pip install baidu-aip
     pip install chardet
     ```
-
-
-
+    
+2. 根据提示安装其他依赖包
 
