@@ -8,6 +8,23 @@
 
 ## Dev Log
 
+- **2022-5-3：**
+
+  **Alpha v0.1.0：**
+
+  构造了对本地图片处理的可用脚本
+
+  接下来将尝试分割`baidu-ocr.py`：
+
+  1. `healthcode-ocr.conf`为配置文件：提供`key`文件路径、输入文件路径、输入文件类型`png/jpg`、输出文件路径、输出文件名
+  2. 通过`main.py`加载配置文件、调用`baidu-ocr.py`识别图片得到结果。
+
+- **2022-5-2：**
+
+  利用本地文件尝试调用了`baidu-ocr SDK`，识别准确率良好
+
+  输出结果格式化为`result.xls`文件
+
 - **2022-4-13：**
 
   `OCR_baidu.py`报错：`ModuleNotFoundError: No module named 'chardet'`，执行命令`pip install chardet`解决。
@@ -30,7 +47,6 @@
     pip install baidu-aip
     pip install chardet
     ```
-
-
-
+    
+2. 根据提示安装其他依赖包
 
