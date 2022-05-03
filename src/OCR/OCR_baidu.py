@@ -44,7 +44,7 @@ def getFileList(dir,Filelist, ext=None):
 
     return Filelist
 
-pictureList = getFileList(pictureDIR,[],'jpg')
+pictureList = getFileList(pictureDIR,[],'png')
 ocrResult = []
 """"""""
 
@@ -58,30 +58,29 @@ for picture in tqdm(pictureList):
     ocrResultMsg = client.basicGeneral(img)['words_result']
     x = [str(list(i.values())[0]) for i in ocrResultMsg]
     x_str = ','.join(x).replace('（请尽快接种新冠疫苗）', '')
+    # 获取姓名
+    name = re.compile(r',?([\u4e00-\u9fa5]{2,4}),')
+    name = name.findall(x_str)
     # 获取最新的检测时间
-    rnaDetectTime = re.compile(r',((.){12})检测,').findall(x_str)
-    num = len(rnaDetectTime) - 1
-    rnaDetectTime = rnaDetectTime[num][0]
+    rnaDetectTime = re.search(r',((.){12})检测,',x_str)
+    rnaDetectTime = rnaDetectTime.groups()
     # 获取截屏时间
     time = re.compile(r',(2022-(.){5})').findall(x_str)
     num = len(time) - 1
     time = time[num][0]
-    # 获取姓名
-    name = re.compile(r',([\u4e00-\u9fa5]{2,4}),')
-    name = name.findall(x_str)
     # 获取健康码类别
-    codeColor = re.compile(r'')
+    codeColor = re.compile(r',湖南(.+?)外省').findall(x_str)
+    codeColor = str(codeColor)
     # try:
     #     name.remove('场所码')
     # except:
     #     pass
     ocrResultItem['截屏时间'] = time
-    ocrResultItem['末次核酸检测时间'] = rnaDetectTime
     ocrResultItem['姓名'] = name[0]
+    ocrResultItem['最新核酸检测时间'] = rnaDetectTime[0]
+    ocrResultItem['电子健康颜色'] = codeColor[2:4]
     ocrResultItem['文件名'] = picture
-    ocrResultItem['文件夹名称'] = os.path.abspath(picture)
     ocrResult.append(ocrResultItem)
 # print(ocrResult)
 
 ocrResult = DataFrame(ocrResult).to_excel('./test/result.xls')
-input('程序运行完成')
