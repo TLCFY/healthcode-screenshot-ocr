@@ -5,9 +5,9 @@ from pandas import DataFrame
 from tqdm import tqdm
 
 """付费资源，需要替换"""
-APP_ID = '25953512'
-API_KEY = 'tGROK4KObFUoE2UFLm7PvfNT'
-SECRET_KEY = 'tYkFiGmp9XQl3UO20zqafGvn7HSOh8zU'
+APP_ID = 'Your APP_ID'
+API_KEY = 'Your API_KEY'
+SECRET_KEY = 'Your SECRET_KEY'
 """"""
 
 """"可能需要修改的部分"""
